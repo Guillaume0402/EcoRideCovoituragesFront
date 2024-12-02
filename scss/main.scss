@@ -5,3 +5,16 @@
   background: linear-gradient(90deg, #3ca55c, #b5ac49);
   color: #fff; // Texte en blanc pour la lisibilité (optionnel)
 }
+html {
+  position: relative;
+  min-height: 100%;
+}
+main {
+  margin-bottom: 150px;
+}
+footer.footer {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
