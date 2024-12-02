@@ -1,0 +1,7 @@
+@import url(/node_modules/bootstrap-icons/font/bootstrap-icons.css);
+
+@import "custom";
+.gradient-primary {
+  background: linear-gradient(90deg, #3ca55c, #b5ac49);
+  color: #fff; // Texte en blanc pour la lisibilité (optionnel)
+}
