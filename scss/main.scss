@@ -5,6 +5,9 @@
   background: linear-gradient(90deg, #3ca55c, #b5ac49);
   color: #fff; // Texte en blanc pour la lisibilité (optionnel)
 }
+* {
+  color: white;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -16,6 +19,7 @@ html {
 main {
   margin-bottom: 150px;
 }
+
 footer {
   padding: 15px;
   bottom: 0;
@@ -61,4 +65,9 @@ p {
 
 .btn:hover {
   background-color: #7cb342;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #28a745;
+  text-decoration: underline;
 }

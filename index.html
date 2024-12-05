@@ -10,6 +10,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/scss/main.css" />
+    <style>
+      .navbar-nav .nav-link {
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+      }
+
+      .navbar-nav .nav-link:hover {
+        /* background-color: #11b9389f; */
+        text-decoration: underline;
+        border-radius: 25px;
+        color: black !important;
+      }
+    </style>
     <title>EcoRide</title>
   </head>
   <body class="full-page-bg min-vh-100">
@@ -36,16 +48,20 @@
               class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 text-shadow-custom text-color-white"
             >
               <li class="nav-item">
-                <a class="nav-link text-reset" href="/">Accueil</a>
+                <a
+                  class="nav-link active text-reset icon-link-hover m-3 p-2"
+                  href="/"
+                  >Accueil</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-reset" href="/">Covoiturages</a>
+                <a class="nav-link text-reset m-3 p-2" href="/">Covoiturages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-reset" href="/">Contact</a>
+                <a class="nav-link text-reset m-3 p-2" href="/">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-reset" href="/">Connexion</a>
+                <a class="nav-link text-reset m-3 p-2" href="/">Connexion</a>
               </li>
             </ul>
           </div>
