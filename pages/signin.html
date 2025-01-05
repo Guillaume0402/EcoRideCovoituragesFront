@@ -1,0 +1,53 @@
+<div class="container py-5">
+    <div class="form-container" style="width: 100%; max-width: 400px">
+        <h2 class="text-center mb-4 text-secondary text-shadow-custom">Connexion</h2>
+        <form>
+
+            <!-- Champ Pseudo -->
+            <div class="mb-3">
+                <label for="usernameInput" class="form-label">Pseudo</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="usernameInput"
+                    name="username"
+                    placeholder="Entrez votre pseudo"
+                    required
+                />
+                <div class="invalid-feedback">Le mail et le mot de passe ne correspondent pas !</div>
+            </div>      
+
+            <!-- Champ Mot de Passe -->
+            <div class="mb-3">
+                <label for="passwordInput" class="form-label">Mot de passe</label>
+                <input
+                    type="password"
+                    class="form-control"
+                    id="passwordInput"
+                    name="password"
+                    placeholder="Entrez votre mot de passe"
+                    required
+                />
+            </div>
+            <!-- Lien Mot de Passe Oublié -->
+            <div class="text-center">
+                <a href="#" class="text-center text-black"
+                    >Mot de passe oublié !</a
+                >
+            </div>
+            <!-- Pas un compte -->
+            <div class="text-center">
+                <a href="/signup" class="text-center text-black"
+                    >Pas de compte ? Inscrivez-vous</a>
+            </div>
+
+            <!-- Bouton Connexion -->
+            <button type="button" class="btn btn gradient-primary w-100 mt-3 border border-black rounded-5" id="submit">
+                
+                Se connecter
+            </button>
+        </div>
+    
+        </form>
+    </div>
+</div>

@@ -1,88 +1,165 @@
-<div class="p-5">
-  <div class="text-center m-15 text-light">
-    <h1 class="text-shadow-custom">
-      Bienvenue sur le site de covoiturages EcoRide
-    </h1>
-  </div>
+<div
+    class="container-fluid d-lg-flex text-center align-items-center justify-content-center"
+>
+    <div class="">
+        <div class="container mt-3">
+            <h1 class="text-center text-shadow-custom mt-1">
+                Bienvenue sur le site de covoiturages EcoRide
+            </h1>
+        </div>
+        <div class="container mt-5 d-block d-flex">
+            <p class="d-none d-md-block text-warning text-center h5">
+                Chez EcoRide, nous croyons que chaque trajet compte pour
+                préserver notre planète. En partageant vos trajets, vous
+                réduisez non seulement les émissions de CO₂, mais vous
+                participez aussi à une communauté solidaire et respectueuse de
+                l’environnement. Que ce soit pour vos déplacements quotidiens ou
+                vos longs voyages, choisissez une façon plus écologique,
+                économique et conviviale de vous déplacer. Ensemble, roulons
+                vers un monde plus durable !
+            </p>
+            <p class="d-block d-md-none text-warning text-center h5">
+                Paragraphe visible uniquement sur les petits écrans.
+            </p>
+        </div>
+        <div class="d-none d-md-block m-3 d-md-flex justify-content-evenly">
+            <img
+                src="/Assets/logo2.webp"
+                alt=""
+                style="width: 180px"
+                class="mx-5"
+            />
+            <img
+                src="/Assets/logo1.webp"
+                alt=""
+                style="width: 180px"
+                class="mx-5"
+            />
+        </div>
+    </div>
+
+    <!-- Carousel d'images -->
+    <div class="d-none d-lg-block container m-5 w-50">
+        <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+        >
+            <div class="carousel-inner rounded-5 border border-black m-3">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img
+                        src="/Assets/COVOITURAGE-R.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                        src="/Assets/jeunes-covoiturage.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                        src="/Assets/covoiturage-Adobe-web.jpeg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                        src="/Assets/taxi-covoiturage.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 </div>
-<div class="container my-5">
-  <div class="row justify-content-center w-100 text-center">
-    <!-- Card 1 -->
-    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-4">
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://media.istockphoto.com/id/1154420286/fr/photo/homme-entrant-le-covoiturage-partageant-la-voiture.jpg?s=2048x2048&w=is&k=20&c=qyLneyXjKefHxkHqnAhBbSm78_p42YT9Z1cvUtt4VVk="
-          class="card-img-top"
-          alt="Card 1"
-        />
-        <div class="card-body gradient-primary">
-          <h5 class="card-title">Changeons demain</h5>
-          <p class="card-text">
-            Rejoignez EcoRide, la plateforme de covoiturage écologique qui
-            réduit les émissions de CO₂ tout en favorisant la mobilité durable.
-          </p>
-          <a href="#" class="btn gradient-primary border border-2"
-            >Inscrivez-vous</a
-          >
+
+<!-- Formulaire de recherche de trajet -->
+<div class="container my-5 mb-3">
+    <form>
+        <div class="row g-3 align-items-end my-3">
+            <!-- Champ Lieu de départ -->
+            <div class="col-md-3">
+                <label for="departure" class="form-label text-shadow-custom"
+                    >Lieu de départ</label
+                >
+                <input
+                    type="text"
+                    id="departure"
+                    name="departure"
+                    class="form-control border border-black"
+                    placeholder="Ex: Paris"
+                    required
+                />
+            </div>
+
+            <!-- Champ Lieu d'arrivée -->
+            <div class="col-md-3">
+                <label for="arrival" class="form-label text-shadow-custom"
+                    >Lieu d'arrivée</label
+                >
+                <input
+                    type="text"
+                    id="arrival"
+                    name="arrival"
+                    class="form-control border border-black"
+                    placeholder="Ex: Lyon"
+                    required
+                />
+            </div>
+
+            <!-- Champ Date de départ -->
+            <div class="col-md-3">
+                <label for="departureDate" class="form-label text-shadow-custom"
+                    >Date de départ</label
+                >
+                <input
+                    type="date"
+                    id="departureDate"
+                    name="departureDate"
+                    class="form-control border border-black"
+                    required
+                />
+            </div>
+
+            <!-- Bouton de recherche -->
+            <div class="col-md-3">
+                <button
+                    type="submit"
+                    class="btn btn gradient-primary rounded-5 w-100 border border-black text-white"
+                >
+                    Rechercher
+                </button>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-4">
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://media.istockphoto.com/id/1175196895/fr/photo/covoiturage.jpg?s=2048x2048&w=is&k=20&c=Sn8TH9zdWb4dy0BwW-d5Kwy8DBLT2MjZoM6Zr8wF_X4="
-          class="card-img-top"
-          alt="Card 2"
-        />
-        <div class="card-body gradient-primary">
-          <h5 class="card-title">Ensemble</h5>
-          <p class="card-text">
-            Partagez vos trajets avec EcoRide et contribuez à préserver la
-            planète tout en économisant sur vos déplacements.
-          </p>
-          <a href="#" class="btn gradient-primary border border-2"
-            >Inscrivez-vous</a
-          >
-        </div>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-4">
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://media.istockphoto.com/id/1179125116/fr/photo/femme-sasseyant-dans-la-voiture-avec-des-amis.jpg?s=2048x2048&w=is&k=20&c=LBxrXMHc87BW5XapRR-OKDQQ9yTgpudNrUmTBg5g6ZU="
-          class="card-img-top"
-          alt="Card 3"
-        />
-        <div class="card-body gradient-primary">
-          <h5 class="card-title">Pour l'avenir de tous</h5>
-          <p class="card-text">
-            Optez pour EcoRide, le covoiturage responsable qui allie économies,
-            confort et respect de l'environnement.
-          </p>
-          <a href="#" class="btn gradient-primary border border-2"
-            >Inscrivez-vous</a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="search-container mt-5 container w-50">
-  <div class="row justify-content-between align-items-center w-100">
-    <!-- Input -->
-    <div class="col-md-8 col-lg-6 col-12 w-75">
-      <input
-        type="text"
-        class="form-control text-center"
-        placeholder="Trouver un itinéraire..."
-        aria-label="Recherche"
-      />
-    </div>
-    <!-- Bouton -->
-    <div class="col-md-auto col-12 mt-3 mt-md-0 text-center w-25">
-      <button class="btn btn-primary w-auto">Chercher</button>
-    </div>
-  </div>
+    </form>
 </div>

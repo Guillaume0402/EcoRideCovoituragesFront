@@ -1,0 +1,75 @@
+<div class="container py-5">
+    <div style="width: 100%; max-width: 400px">
+        <h2 class="text-center mb-4 text-secondary text-shadow-custom">
+            Inscription
+        </h2>
+        <form>
+            <div class="mb-3">
+                <label for="emailInput" class="form-label text-shadow-custom"
+                    >Email</label
+                >
+                <input type="email" class="form-control" id="emailInput" />
+                <div class="invalid-feedback">
+                    Ceci n'est pas un mail valide
+                </div>
+            </div>
+            <!-- Champ Pseudo -->
+            <div class="mb-3">
+                <label for="usernameInput" class="form-label">Pseudo</label>
+                <input type="text" class="form-control" id="usernameInput" />
+                <div class="invalid-feedback">
+                    Un pseudo est requis pour vous inscrire
+                </div>
+            </div>
+
+            <!-- Champ Mot de Passe -->
+            <div class="mb-3">
+                <label for="passwordInput" class="form-label"
+                    >Mot de passe</label
+                >
+                <input
+                    type="password"
+                    class="form-control"
+                    id="passwordInput"
+                />
+                <div class="invalid-feedback">
+                    Veuillez entrer un mot de passe valide.(8 caractères
+                    minimum, 1 majuscule, 1 minuscule, 1 chiffre et 1 caractère
+                    spécial)
+                </div>
+                <div class="valid-feedback">Mot de passe valide</div>
+            </div>
+            <div class="mb-3">
+                <label for="verifiedPasswordInput" class="form-label"
+                    >Confirmez votre mot de passe</label
+                >
+                <input
+                    type="password"
+                    class="form-control"
+                    id="verifiedPasswordInput"
+                />
+                <div class="invalid-feedback">
+                    Les mots de passe ne correspondent pas !
+                </div>
+                <div class="valid-feedback">
+                    Les mots de passe correspondent
+                </div>
+            </div>
+            <!-- Lien Déjà un compte -->
+            <div class="text-center">
+                <a href="/signin" class="text-center text-black"
+                    >Déjà un compte, connectez-vous !</a
+                >
+            </div>
+
+            <!-- Bouton Connexion -->
+            <button
+                type="submit"
+                class="btn btn-custom w-100 rounded-5 mt-3 border border-black"
+                id="submitBtn"
+            >
+                Se connecter
+            </button>
+        </form>
+    </div>
+</div>

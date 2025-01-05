@@ -1,0 +1,155 @@
+<div class="container py-5">
+    <div class="form-container" style="width: 100%; max-width: 600px">
+        <h2 class="text-center text-secondary text-shadow-custom mb-4">Sélectionnez Votre Rôle</h2>
+        <form>
+            <!-- Sélection du rôle -->
+            <div class="mb-3">
+                <label for="role" class="form-label">Rôle</label>
+                <select class="form-select border border-black text-black" id="role" name="role" required>
+                    <option value="" class="text-black">Choisir...</option>
+                    <option value="chauffeur" class="text-black">Chauffeur</option>
+                    <option value="passager" class="text-black">Passager</option>
+                    <option value="passager_chauffeur" class="text-black">
+                        Passager & Chauffeur
+                    </option>
+                </select>
+            </div>
+
+            <!-- Informations Chauffeur -->
+            <div>
+                <h4 class="text-secondary mt-4 text-shadow-custom">Informations Chauffeur</h4>
+
+                <!-- Véhicule -->
+                <div id="vehicles-section">
+                    <h5>Véhicule</h5>
+                    <div class="mb-3">
+                        <label for="license-plate" class="form-label"
+                            >Plaque d'immatriculation</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control border border-black"
+                            id="license-plate"
+                            name="license_plate"
+                            placeholder="Entrez la plaque d'immatriculation"
+                        />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="registration-date" class="form-label"
+                            >Date de première immatriculation</label
+                        >
+                        <input
+                            type="date"
+                            class="form-control border border-black"
+                            id="registration-date"
+                            name="registration_date"
+                        />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="vehicle-details" class="form-label"
+                            >Modèle, Couleur et Marque</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control border border-black"
+                            id="vehicle-details"
+                            name="vehicle_details"
+                            placeholder="Exemple : Toyota Corolla, Rouge"
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label for="motor" class="form-label">Type de motorisation</label>
+                        <select class="form-select text-black border border-black" id="motor" name="motor" required>
+                            <option value="" class="text-black">Choisir...</option>
+                            <option value="essence" class="text-black">Essence</option>
+                            <option value="diesel" class="text-black">Diesel</option>
+                            <option value="electrique" class="text-black">Electrique                             
+                            </option>
+                        </select>                   
+                    <div class="mb-3">
+                        <label for="seats" class="form-label"
+                            >Nombre de places disponibles</label
+                        >
+                        <input
+                            type="number"
+                            class="form-control border border-black"
+                            id="seats"
+                            name="seats"
+                            min="1"
+                            max="8"
+                            placeholder="Entrez le nombre de places disponibles"
+                        />
+                    </div>
+                </div>
+
+                <!-- Préférences -->
+                <h5 class="mt-4">Préférences</h5>
+                <div class="form-check">
+                    <input
+                        class="form-check-input border border-black"
+                        type="checkbox"
+                        id="smoking"
+                        name="preferences[]"
+                        value="fumeur"
+                    />
+                    <label class="form-check-label" for="smoking">Fumeur</label>
+                </div>
+                <div class="form-check">
+                    <input
+                        class="form-check-input border border-black"
+                        type="checkbox"
+                        id="no-smoking"
+                        name="preferences[]"
+                        value="non-fumeur"
+                    />
+                    <label class="form-check-label" for="no-smoking"
+                        >Non-fumeur</label
+                    >
+                </div>
+                <div class="form-check">
+                    <input
+                        class="form-check-input border border-black"
+                        type="checkbox"
+                        id="animals"
+                        name="preferences[]"
+                        value="animal"
+                    />
+                    <label class="form-check-label" for="animals"
+                        >Animal accepté</label
+                    >
+                </div>
+                <div class="form-check">
+                    <input
+                        class="form-check-input border border-black"
+                        type="checkbox"
+                        id="no-animals"
+                        name="preferences[]"
+                        value="pas-d-animal"
+                    />
+                    <label class="form-check-label" for="no-animals"
+                        >Pas d'animal</label
+                    >
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <label for="custom-preferences" class="form-label"
+                        >Ajouter vos préférences</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control border border-black"
+                        id="custom-preferences"
+                        name="custom_preferences"
+                        placeholder="Exemple : Pas de musique forte"
+                    />
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn gradient-primary rounded-5 w-100 mt-3 border border-black">
+                Enregistrer
+            </button>
+        </form>
+    </div>
+</div>

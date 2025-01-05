@@ -1,73 +1,49 @@
 @import url(/node_modules/bootstrap-icons/font/bootstrap-icons.css);
-
 @import "custom";
-.gradient-primary {
-  background: linear-gradient(90deg, #3ca55c, #b5ac49);
-  color: #fff; // Texte en blanc pour la lisibilité (optionnel)
-}
+
+// .gradient-primary {
+//     background: linear-gradient(90deg, #3ca55c, #b5ac49);
+// }
 * {
-  color: white;
+    color: white;
 }
 html {
-  position: relative;
-  min-height: 100%;
+    min-height: 100%;
 }
-.navbar {
-  padding: 15px;
-  font-size: 20px;
-}
-main {
-  margin-bottom: 150px;
-}
-
-footer {
-  padding: 15px;
-  bottom: 0;
-  width: 100%;
-}
-p {
-  font-family: $font-family-serif;
-  font-size: 20px;
-}
-.full-page-bg {
-  background-image: url("/Assets/background-1.webp");
-  background-size: cover; /* Pour couvrir toute la page */
-  background-position: center; /* Centrer l'image */
-  background-repeat: no-repeat; /* Empêche la répétition */
-}
-.text-shadow-custom {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.693);
-}
-.container {
-  display: flex;
-  justify-content: center;
-}
-.search-container {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50px;
-  padding: 10px;
-}
-
-.form-control {
-  border: none;
-  border-radius: 50px;
-  box-shadow: none;
-}
-
-.btn {
-  background-color: #8bc34a;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #7cb342;
+header nav .navbar {
+    padding: 15px !important;
+    font-size: 20px !important;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #28a745;
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    border-radius: 25px;
+    color: black !important;
+}
+
+#submitBtn {
+    background-color: rgb(128, 117, 117); // Couleur du bouton désactivé
+    border: 1px solid #ccc;
+    cursor: not-allowed; // Curseur interdit
+    opacity: 0.5; // Transparence pour indiquer qu'il est désactivé
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+
+    &:not(:disabled) {
+        background-color: #28a745; // Couleur du bouton activé
+        border-color: #28a745;
+        cursor: pointer;
+        opacity: 1; // Pleine opacité
+    }
+
+    &:hover:not(:disabled) {
+        background-color: #218838; // Couleur légèrement différente au survol
+    }
 }

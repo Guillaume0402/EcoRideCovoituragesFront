@@ -1,95 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/scss/main.css" />
-    <style>
-      .navbar-nav .nav-link {
-        transition: color 0.3s ease, text-decoration 0.3s ease;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-      .navbar-nav .nav-link:hover {
-        /* background-color: #11b9389f; */
-        text-decoration: underline;
-        border-radius: 25px;
-        color: black !important;
-      }
-    </style>
-    <title>EcoRide</title>
-  </head>
-  <body class="full-page-bg min-vh-100">
-    <header>
-      <nav
-        class="navbar navbar-expand-lg gradient-primary"
-        data-bs-theme="dark"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand fs-2 text-shadow-custom" href="/">EcoRide</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 text-shadow-custom text-color-white"
-            >
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-reset icon-link-hover m-3 p-2"
-                  href="/"
-                  >Accueil</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-reset m-3 p-2" href="/">Covoiturages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-reset m-3 p-2" href="/">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-reset m-3 p-2" href="/">Connexion</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+        <link rel="stylesheet" href="/scss/main.css" />
 
-    <main id="main-page">
-      <!-- Ceci est le contenu de ma page injecté ici -->
-    </main>
+        <title>EcoRide</title>
+    </head>
+    <body class="full-page-bg gradient-primary w-100">
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg border-bottom border-black">
+                <div class="container-fluid">
+                    <a
+                        class="navbar-brand fs-2 text-shadow-custom text-white"
+                        href="/"
+                        >EcoRide</a
+                    >
+                    <img class="logo" src="Assets/logo.svg" alt="" />
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul
+                            class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 text-shadow-custom text-custom"
+                        >
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active text-reset icon-link-hover m-3 p-2"
+                                    href="/"
+                                    >Accueil</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-reset m-3 p-2"
+                                    href="/formulaireUtilisateur"
+                                    >Covoiturages</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-reset m-3 p-2"
+                                    href="/contact"
+                                    >Contact</a
+                                >
+                            </li>
+                            <li class="nav-item" data-show="disconnected">
+                                <a
+                                    class="nav-link text-reset m-3 p-2"
+                                    href="/signin"
+                                    >Connexion</a
+                                >
+                            </li>
+                            <li class="nav-item" data-show="connected">
+                                <button
+                                    class="nav-link text-reset m-3 p-2"
+                                    id="logout"
+                                >
+                                    Déconnexion
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-    <footer class="gradient-primary text-center footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-4">
-            <p>Contact : EcoRide@gmail.com</p>
-          </div>
-          <div class="col-12 col-lg-4">
-            <p>Mentions légales</p>
-          </div>
-          <div class="col-12 col-lg-4">
-            <p>Politique de confidentialité</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+        <main id="main-page">
+            <!-- Ceci est le contenu de ma page injecté ici -->
+        </main>
 
-    <script type="module" src="/Router/router.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+        <footer class="text-center border-top border-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 text-shadow-custom">
+                        <p>Contact : EcoRide@gmail.com</p>
+                    </div>
+                    <div class="col-12 col-lg-4 text-shadow-custom">
+                        <p>Mentions légales</p>
+                    </div>
+                    <div class="col-12 col-lg-4 text-shadow-custom">
+                        <p>Politique de confidentialité</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="/Router/router.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/script.js"></script>
+    </body>
 </html>
